@@ -3,18 +3,26 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
+ * Represent a tweer
+ *
  * Created by dezfuli on 1/16/18.
+ *
+ * version 1.0
  */
 
 public abstract class Tweet implements Tweetable {
     private String message;
     private Date date;
 
+    /**
+     * Constructs a tweet instance using the given message
+     * @param message the message of the tweet
+     */
     Tweet(String message){
 
         this.message = message;
         date = new Date();
-//        message = message;
+
     }
 
     Tweet(String message, Date date){
